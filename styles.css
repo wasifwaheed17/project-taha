@@ -455,6 +455,9 @@ a {
     width: 100%;
     height: auto;
   }
+  .third{
+    padding: 20px;
+  }
   .third-section h1 {
     font-size: 12px;
   }
