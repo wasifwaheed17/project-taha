@@ -456,6 +456,8 @@ a {
     height: auto;
   }
   .third{
+    display: flex;
+    flex-direction: column;
     padding: 60px;
   }
   .third-section h1 {
