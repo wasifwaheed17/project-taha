@@ -11,8 +11,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-
 </head>
 <body>
     <header>
@@ -20,11 +18,13 @@
             <a href="#">
                 <h1>
                     <span class="white">HOME</span>
-                    <span class="white">OF</span>
                     <span class="white">INTERNET</span>
                 </h1>
             </a>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars white"></i>
+            </div>
+            <ul class="navbar-links">
                 <li><a href="#" class="white"><b>Home</b></a></li>
                 <li><a href="#" class="white"><b>About</b></a></li>
                 <li><a href="#" class="white"><b>Contact</b></a></li>
@@ -37,7 +37,23 @@
                 </a>
             </div>
         </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#" class="white"><b>Home</b></a>
+            <a href="#" class="white"><b>About</b></a>
+            <a href="#" class="white"><b>Contact</b></a>
+            <a href="#" class="white"><b>More</b></a>
+            
+            <div class="gtr3">
+                <img class="ico" src="assets/icons8-telephone-30.png">
+                <a class="gtr1" href="tel:%208888185405">
+                    (888) 818-5405
+                </a>
+            </div>
+        </div>
     </header>
+
     <section class="banner">
         <div>
             <h1>AUTHORIZED RETAILER</h1>
@@ -46,10 +62,11 @@
 
         <div class="button1">
             <a class="new-button" href="tel:%208888185405">
-            <button class="animated-button"><b>CALL TO ORDER</b></button>
+                <button class="animated-button"><b>CALL TO ORDER</b></button>
+            </a>
         </div>
-
     </section>
+
 
     <!-- Product Section -->
     <section class="product">
@@ -118,7 +135,6 @@
                 </div>
             </div>
         </div>
-                </div>
     </section>
 
     <!-- Additional Section -->
@@ -141,33 +157,32 @@
         </div>
     </section>
 
-    <!-- Third_ Section-->
+    <!-- Third Section-->
     <section class="third">
         <div class="third-section">
             <h1>A HOME IS A CONNECTED HOME</h1>
         </div>
         <div class="third-text">
             <p>Watch live TV and On Demand on any screen with Authorized Retailer Cable, from smart TVs. Pay your bill, make online payments, Stream, surf, and game faster than ever with game-changing Authorized Retailer Internet starting speeds. And talk all you want to family and friends in the U.S., Mexico, Canada, and more countries. Plus, get it all with NO contracts and NO early termination fees!</p>  
-            
         </div>
 
         <div class="text2">
-        <h2>CALL TO CLAIM THIS OFFER</h2>
+            <h2>CALL TO CLAIM THIS OFFER</h2>
         </div>
 
         <div class="call">
-             Call Us
-        <strong>
-        <a href="tel:8888185405"><u>(888) 818-5405</u></a>
-        </strong>
+            Call Us
+            <strong>
+                <a href="tel:8888185405"><u>(888) 818-5405</u></a>
+            </strong>
         </div>
     </section>
-   <footer>
+
+    <footer>
         <div class="footer-content">
             <h3>WIFI Authorized Retailer</h3>
-            
         </div>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>

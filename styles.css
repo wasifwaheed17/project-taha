@@ -1,3 +1,4 @@
+/* General styles for all screen sizes */
 * {
   font-family: sans-serif;
 }
@@ -18,27 +19,29 @@ a {
   color: #191970;
 }
 
-/* navbar css */
+/* Navbar CSS */
 .navbar {
   display: flex;
   background-color: #007aa5;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 100px;
+  padding: 0px 20px;
 }
 
 .navbar ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .navbar ul li {
-  margin-left: 20px;
+  margin: 10px;
 }
 
 .navbar ul li a {
   position: relative;
-  padding: 20px 20px;
+  padding: 10px;
 }
 
 .navbar ul li a::before {
@@ -55,7 +58,6 @@ a {
   width: 100%;
   left: 0;
 }
-
 .gtr {
   color: white;
   background: #00d2ff;
@@ -70,7 +72,6 @@ a {
   align-items: flex-start;
   padding: 8px;
 }
-
 .ico {
   height: 20px;
   width: 20px;
@@ -79,6 +80,13 @@ a {
 
 .gtr1 {
   color: white;
+}
+.menu-icon{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
 }
 
 .banner {
@@ -134,7 +142,6 @@ a {
   background-color: green;
   transform: scale(1.1);
 }
-
 /* Product Section */
 .product {
   padding: 50px 100px;
@@ -145,6 +152,7 @@ a {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid gray;
+  margin-bottom: 50px;
 }
 
 .section-header h1 {
@@ -206,9 +214,6 @@ a {
   margin-top: 10px; /* Add margin to separate the button from the content */
   margin-right: 50px;
 }
-
-
-/* Center align text in the section */
 .additional-section {
   text-align: center;
   padding: 20px;
@@ -290,4 +295,186 @@ a {
   background-position: center center;
   padding: 30px;
   margin-top: 50px;
+}
+
+/* Media queries for tablets */
+@media only screen and (min-width: 600px) {
+  .navbar ul li {
+    margin: 15px;
+  }
+
+  .navbar ul li a {
+    padding: 15px;
+  }
+
+  .banner div h1 {
+    font-size: 50px;
+  }
+
+  .section-header h1 {
+    font-size: 40px;
+  }
+
+  .product-item {
+    width: 48%;
+    margin: 10px;
+  }
+
+  .additional-section p {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .additional-section ul {
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+
+  .third-section h1 {
+    font-size: 60px;
+  }
+
+  .footer-content {
+    padding: 30px;
+  }
+}
+
+/* Media queries for mobile */
+@media only screen and (max-width: 599px) {
+  a {
+    text-decoration: none;
+  }
+
+  .white {
+    color: white;
+  }
+
+  .red {
+    color: #191970;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: #007aa5;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .navbar ul li a {
+    padding: 10px;
+  }
+  .menu-icon{
+    display: block;
+  }
+/* Mobile Menu */
+.mobile-menu {
+  
+  display: none;
+  flex-direction: column;
+  background-color: #007aa5;
+  padding: 20px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  left: 0;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+/* Close Button */
+.close-button {
+  color: white;
+  cursor: pointer;
+  text-align: right;
+}
+.gtr {
+  display: none;
+}
+  .banner {
+    padding: 40px 10px;
+    height: auto;
+    width: auto;
+    font-size: 12px;
+  }
+
+  .banner div h1 {
+    font-size: 24px;
+  }
+  .section-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .section-header h1 {
+    font-size: 14px;
+  }
+  .product {
+    padding: 0;
+    
+  }
+  .product-main{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .product-item {
+    width: 100%;
+    margin: 10px 0;
+    
+    
+  }
+
+  .additional-section h1{
+    font-size: 12px;
+  }
+  .additional-section p {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .additional-section ul {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  .additional-section li{
+    font-size: 10px;
+  }
+  .additional-section .right-image {
+    width: 100%;
+    height: auto;
+  }
+  .third-section h1 {
+    font-size: 12px;
+  }
+  .third-text {
+    font-size: 10px;
+  }
+  .text2{
+    font-size: 12px;
+  }
+  .call{
+    font-size: 10px;
+  }
+  .footer-content {
+    padding: 20px;
+    font-size: 12px;
+  }
+
+  /* Close Button Styles */
+  .close-button {
+    text-align: left;
+    padding: 10px;
+  }
 }
