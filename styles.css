@@ -461,9 +461,11 @@ a {
     display: flex;
     flex-direction: column;
     padding: 60px;
+    margin-right:50px ;
   }
   .third-section h1 {
     font-size: 12px;
+    padding-left: 30px;
   }
   .third-text {
     font-size: 10px;
